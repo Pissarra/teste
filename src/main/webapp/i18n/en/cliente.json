@@ -1,0 +1,44 @@
+{
+  "testeApp": {
+    "cliente": {
+      "home": {
+        "title": "Clientes",
+        "createLabel": "Create a new Cliente",
+        "createOrEditLabel": "Create or edit a Cliente"
+      },
+      "created": "A new Cliente is created with identifier {{ param }}",
+      "updated": "A Cliente is updated with identifier {{ param }}",
+      "deleted": "A Cliente is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Cliente {{ id }}?"
+      },
+      "detail": {
+        "title": "Cliente"
+      },
+      "tipo": "Tipo",
+      "nome": "Nome",
+      "rg": "Rg",
+      "cpf": "Cpf",
+      "cfdf": "Cfdf",
+      "cnpj": "Cnpj",
+      "dataNascimento": "Data Nascimento",
+      "dataCriacao": "Data Criacao",
+      "dataCadastro": "Data Cadastro",
+      "profissao": "Profissao",
+      "email": "Email",
+      "ddd": "Ddd",
+      "telefone": "Telefone",
+      "cep": "Cep",
+      "logradouro": "Logradouro",
+      "localidade": "Localidade",
+      "bairro": "Bairro",
+      "complemento": "Complemento",
+      "uf": "Uf",
+      "numero": "Numero",
+      "pontosReferenciaEndereco": "Pontos Referencia Endereco",
+      "estacaoMetroMaisProxima": "Estacao Metro Mais Proxima",
+      "restricoes": "Restricoes",
+      "diaristasPreferidas": "Diaristas Preferidas"
+    }
+  }
+}

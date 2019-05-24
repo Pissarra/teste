@@ -1,0 +1,61 @@
+entity Diarista {
+	nome String required minlength(3) maxlength(250),
+  	rg String required minlength(3) maxlength(50),
+    cpf String required minlength(11) maxlength(11) pattern(/[0-9]+/),
+    cep String required minlength(8) maxlength(8) pattern(/[0-9]+/),
+    logradouro String required minlength(2) maxlength(250),
+    localidade String required minlength(2) maxlength(250),
+    bairro String required minlength(2) maxlength(250),
+    uf UF required,
+    complemento String maxlength(250),
+    numero String required minlength(1) maxlength(40),
+    ddd String required minlength(2) maxlength(2) pattern(/[0-9]+/),
+    telefone String required minlength(8) maxlength(9) pattern(/[0-9]+/),
+    email String required minlength(3) maxlength(250),
+    cep String required minlength(8) maxlength(8) pattern(/[0-9]+/),
+    nomeContato String required minlength(3) maxlength(250),
+    dddContato String required minlength(2) maxlength(2) pattern(/[0-9]+/),
+    telefoneContato String required minlength(8) maxlength(9) pattern(/[0-9]+/),
+    dataNascimento LocalDate required,
+    cargo String required minlength(2) maxlength(250),
+    dataAdmissao LocalDate required,
+    dataSaida LocalDate,
+    tamanhoCamisa TamanhoCamisa required,
+    pis String required minlength(3) maxlength(30) pattern(/[0-9]+/),
+    cartaoCidadado String required minlength(2) maxlength(30) pattern(/[0-9]+/),
+    numeroTituloEleitor String required minlength(6) maxlength(30) pattern(/[0-9]+/),
+    zonaTituloEleitor String required minlength(2) maxlength(5) pattern(/[0-9]+/),
+    secaoTituloEleitor String required minlength(2) maxlength(6) pattern(/[0-9]+/),
+    numeroCarteiraTrabalho String required minlength(2) maxlength(20) pattern(/[0-9]+/),
+    serieCarteiraTrabalho String required minlength(2) maxlength(6) pattern(/[0-9]+/),
+    ufCarteiraTrabalho UF required,
+    nire String minlength(11) maxlength(11) pattern(/[0-9]+/),
+    cnpj String required minlength(14) maxlength(14) pattern(/[0-9]+/),
+}
+
+enum TamanhoCamisa {
+	PP, P, M, G, GG, XG
+}
+
+enum UF {
+	AC,AL,AP,AM,BA,CE,DF,ES,GO,MA,MT,MS,MG,PA,
+	PB,PR,PE,PI,RJ,RN,RS,RO,RR,SC,SP,SE,TO
+}
+
+entity ModeloMensagens {
+	titulo String required minlength(3) maxlength(250),
+	mensagem String required minlength(3) maxlength(250)
+}
+
+// Set pagination options
+paginate Diarista with infinite-scroll
+paginate ModeloMensagens with pagination
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

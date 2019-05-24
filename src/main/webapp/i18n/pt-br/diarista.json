@@ -1,0 +1,53 @@
+{
+  "testeApp": {
+    "diarista": {
+      "home": {
+        "title": "Diaristas",
+        "createLabel": "Criar novo Diarista",
+        "createOrEditLabel": "Criar ou editar Diarista"
+      },
+      "created": "Um novo Diarista foi criado com o identificador {{ param }}",
+      "updated": "Um Diarista foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Diarista foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Diarista {{ id }}?"
+      },
+      "detail": {
+        "title": "Diarista"
+      },
+      "nome": "Nome",
+      "rg": "Rg",
+      "cpf": "Cpf",
+      "cep": "Cep",
+      "logradouro": "Logradouro",
+      "localidade": "Localidade",
+      "bairro": "Bairro",
+      "uf": "Uf",
+      "complemento": "Complemento",
+      "numero": "Numero",
+      "ddd": "Ddd",
+      "telefone": "Telefone",
+      "email": "Email",
+      "nomeContato": "Nome Contato",
+      "dddContato": "Ddd Contato",
+      "telefoneContato": "Telefone Contato",
+      "dataNascimento": "Data Nascimento",
+      "cargo": "Cargo",
+      "dataAdmissao": "Data Admissao",
+      "dataSaida": "Data Saida",
+      "tamanhoCamisa": "Tamanho Camisa",
+      "pis": "Pis",
+      "cartaoCidadado": "Cartao Cidadado",
+      "numeroTituloEleitor": "Numero Titulo Eleitor",
+      "zonaTituloEleitor": "Zona Titulo Eleitor",
+      "secaoTituloEleitor": "Secao Titulo Eleitor",
+      "numeroCarteiraTrabalho": "Numero Carteira Trabalho",
+      "serieCarteiraTrabalho": "Serie Carteira Trabalho",
+      "ufCarteiraTrabalho": "Uf Carteira Trabalho",
+      "nire": "Nire",
+      "cnpj": "Cnpj",
+      "cliente": "Cliente",
+      "cliente": "Cliente"
+    }
+  }
+}

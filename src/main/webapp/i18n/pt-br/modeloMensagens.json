@@ -1,0 +1,22 @@
+{
+  "testeApp": {
+    "modeloMensagens": {
+      "home": {
+        "title": "Modelo Mensagens",
+        "createLabel": "Criar novo Modelo Mensagens",
+        "createOrEditLabel": "Criar ou editar Modelo Mensagens"
+      },
+      "created": "Um novo Modelo Mensagens foi criado com o identificador {{ param }}",
+      "updated": "Um Modelo Mensagens foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Modelo Mensagens foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Modelo Mensagens {{ id }}?"
+      },
+      "detail": {
+        "title": "Modelo Mensagens"
+      },
+      "titulo": "Titulo",
+      "mensagem": "Mensagem"
+    }
+  }
+}
